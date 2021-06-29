@@ -4,8 +4,21 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+const heartGlyphStates = {
+  "♡" : "♥",
+  "♥" : "♡"
+}
+
+const colorstates = {
+  "pink": "",
+  "" : "pink"
+}
+
+const glyphLikes = document.querySelector("like-glyph")
 
 
+const modal = document.querySelector("#modal")
+modal.setAttribute("class", "hidden");
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
